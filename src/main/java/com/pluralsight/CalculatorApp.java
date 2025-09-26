@@ -32,7 +32,6 @@ public class CalculatorApp {
                 }
 
                 operators.add(operation);
-
                 System.out.print("Enter the next number: ");
                 while (!input.hasNextDouble()) {
                     System.out.print("Enter a valid number: ");
@@ -54,7 +53,6 @@ public class CalculatorApp {
             for (int i = 0; i < operators.size(); i++) {
                 String operation = operators.get(i);
                 double nextNum = numbers.get(i + 1);
-
                 switch (operation) {
                     case "+" -> total += nextNum;
                     case "-" -> total -= nextNum;
