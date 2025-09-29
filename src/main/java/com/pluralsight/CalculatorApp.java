@@ -42,14 +42,14 @@ public class CalculatorApp {
 
             // If there is only one number and no operation:
             if (operators.isEmpty()) {
-                System.out.println("Equals: " + numbers.getFirst()); //starting — numbers.get(0)
+                System.out.println("Equals: " + numbers.get(0)); //starting — numbers.get(0)
                 return;
             }
 
             // Solve left to right: operators[i] applies to numbers[i] and numbers[i+1]
             // Keep a running total starting with numbers.getFirst
             // — aka numbers.get(0).
-            double total = numbers.getFirst();
+            double total = numbers.get(0);
             for (int i = 0; i < operators.size(); i++) {
                 String operation = operators.get(i);
                 double nextNum = numbers.get(i + 1);
